@@ -1,0 +1,44 @@
+doctype
+html
+    head
+        title fruitplants
+        style
+            include ../static/style.css
+        link(rel="shortcut icon", href="../static/image/logo.png", type="image/x-icon")
+
+    
+    body
+        nav#nevbar
+            img(src="../static/image/logo.png", alt="logo image")
+            ul
+                li #[a(href="/") Home] 
+                li #[a(href="/plants") Plants] 
+                    ul
+                        li #[a(href="/flowerplants") FlowerPlants]
+                        li #[a(href="/fruitplants") FruitPlants]
+                        li #[a(href="/vegetableplants") VegetablePlants]
+                li #[a(href="/gardtool") Gardening Tools] 
+                li #[a(href="/fertilizer") Fertilizers]  
+
+
+        footer#footer
+            div.div#f
+                h2.h2 Quick links
+                ul 
+                    li #[a(href="/flowerplants") FlowerPlants]
+                    li #[a(href="/fruitplants") FruitPlants]
+                    li #[a(href="/vegetableplants") VegetablePlants]
+                    li #[a(href="/gardtool") Gardening Tools] 
+                    li #[a(href="/fertilizer") Fertilizers]
+
+            div.div#s
+                h2.h2 Contact
+                h4 plantNursery@gmail.com
+                h4 (+91)6352080200
+
+            div.div#t
+                h2.h2 Chat With Us
+                input(type="text" name="name" placeholder="enter name here" class="t")
+                textarea(name="suggestions", cols="10", rows="2" placeholder="Suggestions for us" class="t")
+                button
+                    | submit
